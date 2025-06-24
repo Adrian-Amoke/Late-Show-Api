@@ -1,1 +1,13 @@
-# Configuration settings for the application
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import MetaData
+
+# Naming convention for migrations
+metadata = MetaData(naming_convention={
+    "fk": "fk_%(table_name)s_%(column_0_name)s_%(referred_table_name)s",
+})
+
+db = SQLAlchemy(metadata=metadata)
+
+SQLALCHEMY_DATABASE_URI = "postgresql://adminlateshow:lateshow@localhost:5432/lateshowdb"
+
+DATABASE_URI = "postgresql://adminlateshow:lateshow@localhost:5432/lateshowdb"
