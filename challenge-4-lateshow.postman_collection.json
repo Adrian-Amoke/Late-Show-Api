@@ -1,7 +1,70 @@
 {
-  "info": {
-    "name": "Challenge 4 Late Show API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": []
+	"info": {
+		"_postman_id": "d91fc51f-7ab9-451a-b1a2-1f4f7d80f00e",
+		"name": "Challenge 4 Late Show API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "45962791",
+		"_collection_link": "https://adrianamoke.postman.co/workspace/Adrian-Amoke's-Workspace~85c4f9df-6fa7-4c50-82cb-f895839ae18b/collection/45962791-d91fc51f-7ab9-451a-b1a2-1f4f7d80f00e?action=share&source=collection_link&creator=45962791"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer  \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1MDc2MjUwNywianRpIjoiZTk2ZWVlOTEtYjhiMS00ZTk4LTkzZDktOWU4ODZkN2M2NjVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NSwibmJmIjoxNzUwNzYyNTA3LCJjc3JmIjoiZGU3MGE4Y2MtZmIzYi00ZjZiLWE3NzItMmE3YzQ4NTgwOWZlIiwiZXhwIjoxNzUwNzYzNDA3fQ.Gwhb-6Le7zVIz_GGbZXkkb4coILQb3nsCMgGwuWnJHw\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Adrian\",\n    \"password\": \"adriano\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5555/login"
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Adrian\",\n    \"password\": \"adriano\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5555/register"
+			},
+			"response": []
+		}
+	]
 }
