@@ -9,5 +9,3 @@ metadata = MetaData(naming_convention={
 db = SQLAlchemy(metadata=metadata)
 
 SQLALCHEMY_DATABASE_URI = "postgresql://adminlateshow:lateshow@localhost:5432/lateshowdb"
-
-DATABASE_URI = "postgresql://adminlateshow:lateshow@localhost:5432/lateshowdb"

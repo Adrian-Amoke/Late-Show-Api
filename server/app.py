@@ -3,10 +3,10 @@ load_dotenv()
 
 from flask import Flask
 from flask_migrate import Migrate
-from server.config import DATABASE_URI, db
+from server.config import SQLALCHEMY_DATABASE_URI, db
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
+app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 migrate = Migrate(app, db)
